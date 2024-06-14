@@ -1,0 +1,122 @@
+header {
+  background-color: rgba(16, 181, 130, 1);
+  padding-bottom: 100px;
+
+  .menu {
+    @extend %flex;
+    max-width: 650px;
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 40px;
+    margin-bottom: 100px;
+
+    a {
+      text-decoration: none;
+      font-family: $font;
+      @extend %text_size16;
+      text-align: left;
+      color: rgba(253, 253, 253, 1);
+    }
+  }
+}
+.container {
+  max-width: 1170px;
+  width: 100%;
+  @extend %flex;
+}
+.foto {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .foto_left {
+    position: relative;
+    z-index: 2;
+    img {
+      border-radius: 0 80px 0 0;
+    }
+  }
+  .border_left {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    z-index: 1;
+  }
+}
+.box_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 542px;
+  width: 100%;
+  h1 {
+    color: rgba(253, 253, 253, 1);
+    @extend %text_size58;
+    line-height: 69.6px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  p {
+    @extend %main_text;
+    text-align: center;
+    color: rgba(253, 253, 253, 1);
+    margin-bottom: 40px;
+  }
+  button {
+    background-color: rgba(250, 159, 66, 1);
+    @extend %btn;
+    color: rgba(253, 253, 253, 1);
+    @extend %text_size16;
+    text-align: center;
+  }
+}
+
+.social {
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  img {
+    margin-bottom: 20px;
+  }
+}
+.foto2 {
+  margin-bottom: 150px;
+  display: flex;
+  position: relative;
+  .foto_right {
+    position: relative;
+    z-index: 2;
+    img {
+      border-radius: 80px 0 0 0;
+    }
+  }
+  .border_right {
+    position: absolute;
+    z-index: 1;
+    bottom: 30px;
+    right: 30px;
+  }
+}
+.down {
+  transform: rotate(270deg);
+  width: 200px;
+  height: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: end;
+
+  .scroll {
+    margin-left: 20px;
+    p {
+      @extend %text_size14;
+      text-align: center;
+      color: rgba(253, 253, 253, 1);
+    }
+  }
+  .arrow {
+    transform: rotate(90deg);
+  }
+}

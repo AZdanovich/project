@@ -1,0 +1,73 @@
+footer {
+  .container {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    height: 171px;
+    align-items: start;
+    .e_mentor {
+      max-width: 270px;
+      width: 100%;
+      p {
+        font-family: $font;
+        @extend %text_size14;
+        line-height: 18.2px;
+        color: rgba(53, 58, 90, 1);
+        margin-top: 30px;
+        margin-bottom: 50px;
+      }
+      img {
+        margin-right: 20px;
+      }
+    }
+    .about {
+      display: flex;
+      flex-direction: column;
+      h3 {
+        font-family: $font;
+        @extend %text_size16;
+        text-align: left;
+        color: rgba(53, 58, 90, 1);
+        margin-bottom: 30px;
+      }
+      a {
+        text-decoration: none;
+        color: rgba(53, 58, 90, 1);
+        @extend %text_size16;
+        font-weight: 400;
+        text-align: left;
+        margin-top: 15px;
+      }
+    }
+  }
+  .line1 {
+    margin-top: 100px;
+    padding: 0;
+    height: 0;
+    border: none;
+    border-top: 1px solid rgba(53, 58, 90, 0.1);
+  }
+  .line2 {
+    padding: 0;
+    height: 0;
+    border: none;
+    border-top: 1px solid rgba(53, 58, 90, 0.1);
+  }
+}
+.public {
+  max-width: 1170px;
+  width: 100%;
+  height: 100px;
+  @extend %flex;
+  a {
+    text-decoration: none;
+    margin-right: 10px;
+    @extend %text_size14;
+    text-align: left;
+    color: rgba(53, 58, 90, 1);
+  }
+  p {
+    @extend %text_size14;
+    text-align: left;
+    color: rgba(53, 58, 90, 1);
+  }
+}
